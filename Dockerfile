@@ -5,8 +5,8 @@ FROM python:3.9
 WORKDIR /flask_app
 
 # Copiază fișierele în container
-COPY requirements.txt requirements.txt
-COPY flask_app.py flask_app.py
+COPY flask_app/requirements.txt requirements.txt
+COPY flask_app/flask_app.py flask_app.py
 
 # Instalează Flask
 RUN pip install -r requirements.txt
