@@ -12,7 +12,7 @@ COPY flask_app/flask_app.py flask_app.py
 RUN pip install -r requirements.txt
 
 # Expune portul 5000
-EXPOSE 5000
+EXPOSE 5001
 
 # Rulează aplicația
 CMD ["python", "flask_app.py"]
